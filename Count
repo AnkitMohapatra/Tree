@@ -1,0 +1,20 @@
+}
+ node* count(node *root)
+{
+ int c;
+ c++;
+ if(root==NULL)
+   return 0;
+ else
+  if(root->left < root)
+    {
+     c++;
+     count(root->left);
+    }
+  else
+  {
+   c++;
+   count(root->right);
+  }
+cout << c+1;
+}
